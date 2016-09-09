@@ -7,9 +7,17 @@
     <script src="../../../dist/aframe.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene fog="type: linear; color: #AAB; far: 30; near: 0">
+      <a-assets>
+        <img id="london" src="../../assets/img/London_Banner2.jpg">
+      </a-assets>
+
+
+      <a-curvedimage src="#london" position="0 4.5 -5" radius="15" theta-length="180" height="9"
+                     rotation="0 90 0" scale="0.2 1.2 1.2"></a-curvedimage>
+
       <a-sphere position="15 1.25 0" radius="1.5" color="silver" material="metal" geometry="" rotation="" scale="" visible=""></a-sphere>
-      <a-box position="0 0.5 0" rotation="0 90 0" width="2.5" height="19" depth="1" color="grey" material="" geometry="" scale="" visible=""></a-box>
+      <a-box position="0 0 0" rotation="0 90 0" width="2.5" height="10" depth="1" color="grey" material="" geometry="" scale="" visible=""></a-box>
       <a-cylinder position="-15 2.25 0" radius="0.5" height="4.5" color="white" material="" geometry="" rotation="" scale="" visible=""></a-cylinder>
       <a-plane rotation="-90 0 0" width="30" height="4" color="black" material="" geometry="" position="" scale="" visible=""></a-plane>
       <a-cone color="tomato" radius-bottom="2" radius-top="0.5" material="" geometry="" position="0 5.25 0" rotation="" scale="" visible=""></a-cone>
